@@ -1,0 +1,30 @@
+@import '../variables';
+@import '../mixins';
+
+.currency {
+    padding: $component-padding;
+    background-color: #EBF2AA;
+    position: relative;
+
+    &__title {
+        margin: 0;
+        font-weight: $bold;
+        display: inline-block;
+        margin-right: 40px;
+        cursor: default;
+    }
+    
+    &__input {
+        width: 70px;
+        @include input-text;
+    }
+    
+    &__info {
+        @include info;
+        max-width: calc(100% - 40px);
+
+        &--show {
+            @include show;
+        }
+    }
+}

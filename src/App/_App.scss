@@ -1,0 +1,40 @@
+@import '../variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('../assets/debut_dark.png');
+}
+
+body {
+    font-family: $font;
+    font-size: $default;
+    margin: 0;
+    padding: 0;
+    color: $main;
+}
+
+#root {
+    display: flex;
+    margin: 100px auto;
+    width: 1200px;
+    flex-direction: column;
+    border-radius: $big-radius;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+.app-title {
+    background-color: #E6EE9C;
+    margin: 0;
+    padding: $component-padding;
+    border-radius: $big-radius $big-radius 0 0;
+    font-size: 40px;
+    cursor: default;
+}
+
+.value {
+    color: $secondary;
+    word-break: break-word;
+}

@@ -1,0 +1,91 @@
+@import './variables';
+
+@media all and (max-width: 1199px) {
+    #root {
+        width: 992px;
+    }
+}
+
+@media all and (max-width: 991px) { 
+    #root {
+        width: 768px;
+    }
+
+    .add-transaction__input--name {
+        width: 200px;
+    }
+
+    .add-transaction__info--show {
+        bottom: 0;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #root {
+        width: 576px;
+    }
+
+    .transaction-list__summary-sum {
+        display: block;
+        margin-left: 0;
+    }
+
+    .currency__title {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .currency__label {
+        display: block;
+    }
+
+    .currency__info--show {
+        bottom: 0;
+    }
+
+    .add-transaction__label,
+    .add-transaction__label {
+        margin-right: 0;
+    }
+
+    .add-transaction__label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .transaction-list,
+    .highest-transaction {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 575px) {
+    #root {
+        width: 100%;
+    }
+
+    .transaction-list__element-id,
+    .transaction-list__element-name,
+    .transaction-list__element-value {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 497px) {
+    .add-transaction__info {
+        bottom: -16px;
+    }
+}
+
+@media all and (max-width: 359px) {
+    .currency__info--show {
+        bottom: -16px;
+    }
+}
+
+@media all and (max-width: 357px) {
+    .add-transaction__info {
+        bottom: -32px;
+    }
+}
